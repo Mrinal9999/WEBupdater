@@ -1,0 +1,197 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 15vh;
+  padding: 1rem 2rem;
+  background-color: #f0f8ff;
+}
+
+header .logo img {  
+  width: 8rem;
+  height: 7rem;
+  align-items: left;
+}
+
+header nav ul {       
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #0d1f44;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+
+header nav ul li a:hover {
+  background-color: rgba(42, 109, 235, 0.1);
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+/* Profile Section */
+.profile { 
+  flex: 1;
+  max-width: 48%;
+  text-align: center;
+  background-color: #d9f1ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.coaching {
+  flex: 1;
+  max-width: 48%;
+  text-align: center;
+  background-color: #d9f1ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.profile img {
+  width: 110vh;
+  height: 80vh;
+  padding-right: 125px;
+  padding-left: auto;
+}
+
+.coaching img {                                          
+  width: 60vh;
+  height: 80vh;
+  object-fit: fill;
+}
+
+.profile .text,
+.coaching .text {
+  padding: 15px;
+  background-color: #d9f1ff;
+  border-top: 2px solid #090155;
+}
+
+.profile .text h3,
+.coaching .text h3 {
+  font-size: 20px;
+  color: #0073e6;
+  margin-bottom: 5px;
+}
+
+.profile .text p,
+.coaching .text p {
+  font-size: 16px;
+}
+
+/* social section */
+
+.footer {
+  padding: 20px 0;
+  background-color: #f9f9f9;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.footer-content p {
+  margin: 0;
+  color: #555;
+  font-size: .85rem;
+  text-align: left;
+  align-items: center; 
+  padding-left: 6rem;
+}
+
+.social-icons {
+  margin: 0;
+  gap: 10px;
+  display: flex;
+  justify-content: right;
+  padding-right: 6rem;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+
+.icon.youtube {
+  background-image: url('ytlogo.png');
+}
+
+.icon.twitter {
+  background-image: url('X.png');
+}
+
+.icon.facebook {
+  background-image: url('facebook.png');
+}
+
+.icon:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .footer-content p {
+    font-size: 12px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+

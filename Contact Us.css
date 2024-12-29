@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body { 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #f9f9f9;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 15vh;
+  padding: 1rem 2rem;
+  background-color: #f0f8ff;
+}
+
+.logo img {
+    width: 8rem;
+    height: 7rem;
+    align-items: left;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0d1f44;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+nav ul li :hover {
+    background-color: rgba(42, 109, 235, 0.1);
+  }
+
+/* Contact Section */
+.contact-section {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #e6e6e6;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.contact-section h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.contact-section strong {
+    color: #000;
+}
+
+.contact-section span {
+    color: #ff5722;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section h1 {
+        font-size: 20px;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+    }
+}
+
+/* social section */
+
+.footer {
+  margin-top: 110px;
+  padding: 20px 0;
+  background-color: white;
+  }
+  
+  .footer-divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .footer-content p {
+    margin: 0;
+    color: #555;
+    font-size: .85rem;
+    text-align: left;
+    align-items: center; 
+    padding-left: 6rem;
+  }
+  
+  .social-icons {
+    margin: 0;
+    gap: 10px;
+    display: flex;
+    justify-content: right;
+    padding-right: 6rem;
+    align-items: center;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+  
+  .icon.youtube {
+    background-image: url('ytlogo.png');
+  }
+  
+  .icon.twitter {
+    background-image: url('X.png');
+  }
+  
+  .icon.facebook {
+    background-image: url('facebook.png');
+  }
+  
+  .icon:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .footer-content p {
+      font-size: 12px;
+    }
+  
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
