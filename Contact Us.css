@@ -32,6 +32,7 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
 .navbar a {
@@ -41,11 +42,48 @@ body {
   font-weight: bold;
   padding: 1rem;
   border-radius: 0.4rem;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0 0 5px #9ecaed;
+  margin: 5px;
+}
+
+.menu-icon i{
+  display: none;
+}
+
+.menu-icon i{
+  color: #0d1f44;
+  font-size: 30px;
 }
 
 nav ul li :hover {
     background-color: rgba(42, 109, 235, 0.1);
   }
+
+  @media (max-width: 693px) {
+    .navbar ul{
+        position: absolute;
+        top: 85px;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        flex-direction: column;
+        text-align: center;
+        background: #f0f8ff;
+        gap: 0;
+        overflow: hidden;
+      }
+   nav ul li{
+    padding: 25px;
+   }
+   .menu-icon i{
+    display: block;
+   }
+   #menuList{
+    transition: all 0.5s;
+   }
+  }
+
 
 /* Contact Section */
 .contact-section {

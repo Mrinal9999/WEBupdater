@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum</title>
+    <link rel="shortcut icon" type="image/x-icon" href="BNT 2.png">
+    <script src="https://kit.fontawesome.com/b60691f3c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Curriculum.css">
 </head>
 <body>
@@ -12,14 +14,36 @@
             <img src="BNT.png" alt="BNT Chemistry Classes Logo">
         </div>
         <nav class="navbar">
-        <ul>
+            <ul id="menuList">
             <li><a href="index.html">Home</a></li>
             <li><a href="Curriculum.html">Curriculum</a></li>
             <li><a href="About Us.html">About Us</a></li>
             <li><a href="Contact Us.html">Contact Us</a></li>
         </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+          </div>
         </nav>
+
+        <script>
+            let menulist = document.getElementById("menuList")
+            menuList.style.maxHeight = "0px";
+  
+  
+            function toggleMenu(){
+              if(menuList.style.maxHeight == "0px")
+            {
+                 menuList.style.maxHeight = "300px";
+            }
+            else{
+              menuList.style.maxHeight = "0px";
+            }
+             }
+  
+          </script>
+
     </header>
+    
     <main class="main-content">
         <div class="info-section">
             <h1>B.N.T Chemistry Classes</h1>
