@@ -89,6 +89,7 @@ header nav ul li a:hover {
  }
  #menuList{
   transition: all 0.5s;
+  width: 775px;
  }
 }
 
