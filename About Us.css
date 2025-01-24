@@ -78,18 +78,18 @@ header nav ul li a:hover {
  .menu-icon i{
   display: block;
  }
- header {
+ /* header {
   width: 775px;
- }
- footer {
+ } */
+ /* footer {
   width: 775px;
- }
- main {
+ } */
+ /* main {
   width: 775px;
- }
+ } */
  #menuList{
   transition: all 0.5s;
-  width: 775px;
+  /* width: 775px; */
  }
 }
 
@@ -168,22 +168,28 @@ main {
 }
 
 /* Responsive Design */
-@media (max-width: 693px) {
+@media (max-width: 1024px) {
   .container {
     flex-direction: row;
     gap: 10px;
-    width: 75vh;
+    width: 40vh;
 
   }
 
   .coaching img {
-    padding-right: 100px;
-    padding-left: auto;
+    width: 40vh;
+    object-fit: fill;
+    height: 60vh;
+    padding-right: 150px;
+    
   }
 
   .profile img {
-    padding-right: 550px;
+    width: 40vh;
+    height: 60vh;
+    padding-right: 150px;
     padding-left: auto;
+    object-fit: fill;
   }
 }
 
@@ -260,4 +266,3 @@ main {
     height: 20px;
   }
 }
-
