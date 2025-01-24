@@ -78,6 +78,15 @@ header nav ul li a:hover {
  .menu-icon i{
   display: block;
  }
+ header {
+  width: 775px;
+ }
+ footer {
+  width: 775px;
+ }
+ main {
+  width: 775px;
+ }
  #menuList{
   transition: all 0.5s;
  }
@@ -158,14 +167,21 @@ main {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 693px) {
   .container {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+    width: 75vh;
+
+  }
+
+  .coaching img {
+    padding-right: 100px;
+    padding-left: auto;
   }
 
   .profile img {
-    padding-right: 350px;
+    padding-right: 550px;
     padding-left: auto;
   }
 }
