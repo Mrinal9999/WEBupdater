@@ -126,12 +126,7 @@ nav ul li :hover {
 
     .info-section h1 {
       font-size: 18px;
-    }
-
-    .footer-content {
-      position: absolute;
-      bottom: 30px;
-    }
+    } 
 
     .footer-divider {
       position: absolute;
@@ -155,8 +150,7 @@ nav ul li :hover {
 /* social section */
 
 .footer {
-  padding: 125px 0;
-  padding-bottom: 20px;
+  padding: 20px 0;
   background-color: #f9f9f9;
   }
   
