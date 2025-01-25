@@ -118,7 +118,7 @@ nav ul li :hover {
 
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 693px) {
     .navbar ul {
       flex-direction: column;
       align-items: center;
@@ -126,6 +126,23 @@ nav ul li :hover {
 
     .info-section h1 {
       font-size: 18px;
+    }
+
+    .footer-content {
+      position: absolute;
+      bottom: 30px;
+    }
+
+    .footer-divider {
+      position: absolute;
+      bottom: 68px;
+      left: 20px;
+    }
+
+    .footer-content {
+      padding-top: 0px;
+      position: absolute;
+      bottom: 21px;
     }
 
     .info-section p,
@@ -138,8 +155,9 @@ nav ul li :hover {
 /* social section */
 
 .footer {
-    padding: 20px 0;
-    background-color: #f9f9f9;
+  padding: 125px 0;
+  padding-bottom: 20px;
+  background-color: #f9f9f9;
   }
   
   .footer-divider {
